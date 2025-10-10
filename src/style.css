@@ -41,7 +41,7 @@
 
 @font-face {
     font-family: 'googlesans';
-    src: url(fonts/googlesans.ttf);
+    src: url(/fonts/googlesans.ttf);
 }
 
 body {
