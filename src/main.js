@@ -1,9 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const articleDetails = {
+    art1: {
+      mainContent: `
+                    <img src="https://placehold.co/1200x600/EADDFF/21005D?text=art1" alt="test" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-primary-container);">
+                    <h1>Test for now.</h1>
+                `,
+    },
+    art2: {
+      mainContent: `
+                    <img src="https://placehold.co/1200x600/E8DEF8/1D192B?text=art2" alt="test" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-secondary-container);">
+                    <h1>Test for now.</h1>
+                `,
+    },
+    art3: {
+      mainContent: `
+                    <img src="https://placehold.co/1200x600/FFD8E4/31111D?text=art3" alt="test" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-tertiary-container);">
+                    <h1>Test for now.</h1>
+                `,
+    },
+    art4: {
+      mainContent: `
+                    <img src="https://placehold.co/1200x600/D0BCFF/381E72?text=art4" alt="test" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-primary-dark);">
+                    <h1>Test for now.</h1>
+                `,
+    },
+    art5: {
+      mainContent: `
+                    <img src="https://placehold.co/1200x600/CCC2DC/332D41?text=art5" alt="test" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-surface-variant);">
+                    <h1>Test for now.</h1>
+                `,
+    },
+  };
   const pageData = {
     home: {
       mainContent: `
                     <h1>Test for now.</h1>
-                    
                 `,
       sidebarContent: `
                     <h1>Test for now.</h1>
@@ -12,31 +43,64 @@ document.addEventListener("DOMContentLoaded", function () {
     articles: {
       mainContent: `
                     <h1>Test for now.</h1>
+                    <div class="article-grid">
+                        <div class="article-card" data-article-id="art1">
+                            <img src="https://placehold.co/600x400/EADDFF/21005D?text=art1" alt="test">
+                            <div class="article-card-content">
+                                <h1>Test for now.</h1>
+                            </div>
+                        </div>
+                        <div class="article-card" data-article-id="art2">
+                            <img src="https://placehold.co/600x400/E8DEF8/1D192B?text=art2" alt="Placeholder image for cheese">
+                            <div class="article-card-content">
+                                <h1>Test for now.</h1>
+                            </div>
+                        </div>
+                        <div class="article-card" data-article-id="art3">
+                            <img src="https://placehold.co/600x400/FFD8E4/31111D?text=art3" alt="Placeholder image for sauces">
+                            <div class="article-card-content">
+                                <h1>Test for now.</h1>
+                            </div>
+                        </div>
+                        <div class="article-card" data-article-id="art4">
+                            <img src="https://placehold.co/600x400/D0BCFF/381E72?text=art4" alt="Placeholder image for buns">
+                            <div class="article-card-content">
+                                <h1>Test for now.</h1>
+                            </div>
+                        </div>
+                         <div class="article-card" data-article-id="art5">
+                            <img src="https://placehold.co/600x400/CCC2DC/332D41?text=art5" alt="Placeholder image for toppings">
+                            <div class="article-card-content">
+                                <h1>Test for now.</h1>
+                            </div>
+                        </div>
+                    </div>
                 `,
-      sidebarContent: `                    <h1>Test for now.</h1>`,
+      sidebarContent: `<h1>Test for now.</h1><h3 class="sidebar-heading">Articles</h3>`,
     },
     advertisement: {
-      mainContent: `                    <h1>Test for now.</h1>`,
-      sidebarContent: `                    <h1>Test for now.</h1>`,
+      mainContent: `<h1>Test for now.</h1>
+                    <p>add will deploy here!😡</p>            
+      `,
+      sidebarContent: `<h1>Test for now.</h1><h3 class="sidebar-heading">Advertisement</h3>`,
     },
     timeline: {
-      mainContent: `                    <h1>Test for now.</h1>`,
+      mainContent: `<h1>Test for now.</h1>
+                `,
       sidebarContent: `
-                                        <h1>Test for now.</h1>
+                    <h1>Test for now.</h1>
                 `,
     },
     glossary: {
-      mainContent: `                    <h1>Test for now.</h1>
+      mainContent: `<h1>Test for now.</h1>
                 `,
       sidebarContent: `
-                                        <h1>Test for now.</h1>
+                    <h1>Test for now.</h1>
                 `,
     },
     about: {
-      mainContent: `<h1>NEXUS BSIT 2-7</h1>
-                    <p>Will add more features soon! - dev ctorw</p>
-                `,
-      sidebarContent: `                    <h1>Test for now.</h1>`,
+      mainContent: `<h1>My Team 2-7</h1>`,
+      sidebarContent: `<p class="sidebar-title">On this page:</p><h3 class="sidebar-heading">Classmates(members)</h3>`,
     },
   };
 
@@ -50,6 +114,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const searchInput = document.getElementById("search-input");
   const closeSearchBtn = document.getElementById("close-search-btn");
   const contentCard = document.getElementById("content-card");
+  const articleOverlay = document.getElementById("article-overlay");
+  const articleModalContent = document.getElementById("article-modal-content");
+  const articleModalContentWrapper = document.getElementById(
+    "article-modal-content-wrapper"
+  );
+  const closeArticleBtn = document.getElementById("close-article-btn");
 
   function applyTheme(theme) {
     darkThemeBtn.classList.toggle("active", theme === "dark");
@@ -75,9 +145,33 @@ document.addEventListener("DOMContentLoaded", function () {
   searchOverlay.addEventListener("click", (e) => {
     if (e.target === searchOverlay) closeSearch();
   });
+
+  function openArticlePopup(articleId) {
+    const article = articleDetails[articleId];
+    if (article) {
+      articleModalContent.innerHTML = article.mainContent;
+      articleModalContentWrapper.scrollTop = 0;
+      articleOverlay.classList.add("visible");
+    }
+  }
+  function closeArticlePopup() {
+    articleOverlay.classList.remove("visible");
+  }
+  contentContainer.addEventListener("click", function (e) {
+    const articleCard = e.target.closest(".article-card");
+    if (articleCard && articleCard.dataset.articleId) {
+      openArticlePopup(articleCard.dataset.articleId);
+    }
+  });
+  closeArticleBtn.addEventListener("click", closeArticlePopup);
+  articleOverlay.addEventListener("click", (e) => {
+    if (e.target === articleOverlay) closeArticlePopup();
+  });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && searchOverlay.classList.contains("visible"))
-      closeSearch();
+    if (e.key === "Escape") {
+      if (searchOverlay.classList.contains("visible")) closeSearch();
+      if (articleOverlay.classList.contains("visible")) closeArticlePopup();
+    }
   });
 
   function createRipple(event) {
