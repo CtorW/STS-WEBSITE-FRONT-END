@@ -73,7 +73,7 @@
             <img src="src/path-4-img/art5-image.png" alt="Climate Inequality Report 2023" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-surface-variant);">
             <h1>The Double Inequity: Unequal Impacts, Unequal Responsibility</h1>
              <div class="article-meta">
-                <span>By Miks</span> | <span>Published: September 28, 2025</span>
+                <span>By Magaway, Mico T.</span> | <span>Published: September 28, 2025</span>
             </div>
             <p>The "Climate Inequality Report 2023" from the World Inequality Lab lays bare the dual injustices of the climate crisis: the unequal distribution of its impacts and the vastly unequal responsibility for causing it. The report demonstrates with extensive data that low- and middle-income countries are, on average, suffering far greater negative consequences from climate change than the wealthy nations that are historically responsible for the bulk of emissions.</p>
             &nbsp;
@@ -389,8 +389,8 @@
                     <p class="contribution-desc">Wrote the article: "The Deciding Factor: Why Good Governance is Key to Climate Adaptation."</p>
                 </div>
                  <div class="team-member">
-                    <img class="team-member-avatar" src="src/pfps/alien7.jpeg" alt="Avatar for Miks">
-                    <h3>Miks</h3>
+                    <img class="team-member-avatar" src="src/pfps/alien7.jpeg" alt="Avatar for Magaway, Mico T.">
+                    <h3>Magaway, Mico T.</h3>
                     <p class="role">Contributing Author</p>
                     <p class="contribution-desc">Wrote the article: "The Double Inequity: Unequal Impacts, Unequal Responsibility."</p>
                 </div>
