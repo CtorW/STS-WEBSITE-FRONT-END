@@ -56,7 +56,7 @@
             <img src="src/path-4-img/art4-image.png" alt="National Adaptation Assessment" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 24px; margin-bottom: 24px; background-color: var(--md-sys-color-primary-dark);">
             <h1>The Deciding Factor: Why Good Governance is Key to Climate Adaptation</h1>
             <div class="article-meta">
-                <span>By Jm</span> | <span>Published: September 22, 2025</span>
+                <span>By Santos, John Michael</span> | <span>Published: September 22, 2025</span>
             </div>
             <p>What determines a nation's capacity to adapt to the unavoidable impacts of climate change? While economic wealth and technological access are important, a global assessment published in the journal Climatic Change points to a more fundamental factor: good governance. The study, "What drives national adaptation? A global assessment," analyzed 117 nations to identify the primary drivers behind the implementation of effective climate adaptation policies.</p>
             &nbsp;
@@ -383,8 +383,8 @@
                     <p class="contribution-desc">Wrote the article: "Beyond Emissions: Recognizing the Human Face of a Global Crisis."</p>
                 </div>
                 <div class="team-member">
-                    <img class="team-member-avatar" src="src/pfps/alien6.jpeg" alt="Avatar for Jm">
-                    <h3>Jm</h3>
+                    <img class="team-member-avatar" src="src/pfps/alien6.jpeg" alt="Avatar for Santos, John Michael">
+                    <h3>Santos, John Michael</h3>
                     <p class="role">Contributing Author</p>
                     <p class="contribution-desc">Wrote the article: "The Deciding Factor: Why Good Governance is Key to Climate Adaptation."</p>
                 </div>
