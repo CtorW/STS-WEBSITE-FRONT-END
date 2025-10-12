@@ -348,7 +348,7 @@
     },
     about: {
       mainContent: `
-            <h1>TEAM 7</h1>
+            <h1>TEAM 7🍁</h1>
             <p>7 Aliens who visit Earth to share knowledge</p>
             &nbsp;
             <div class="team-grid">
