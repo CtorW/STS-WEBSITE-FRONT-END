@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games & Quiz - Science Nexus ⚛️</title>
+    <link rel="shortcut icon" href="src/logos/science-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="game-src/game.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="navbar-overlay"></div>
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none">
+            <div class="navbar-header"><span>Science Nexus ⚛️</span></div>
+        </a>
+        <ul>
+            <li>
+                <a href="index.html" class="nav-link back-button">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Back to Main Page</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="page-wrapper">
+        <main class="main-content-wrapper">
+            <header class="main-header">
+                <button class="icon-btn menu-btn" aria-label="Open navigation menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="theme-switcher">
+                    <button class="icon-btn" id="light-theme-btn" aria-label="Switch to light theme">
+                        <span class="material-symbols-outlined">light_mode</span>
+                    </button>
+                    <button class="icon-btn" id="dark-theme-btn" aria-label="Switch to dark theme">
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </header>
+            <div class="content-card" id="content-card">
+                <div id="content-container">
+                    <h1>Games & Quizzes</h1>
+                    <p>
+                        Test your knowledge and engage with the topics in a new,
+                        interactive way. Select an activity below to get started.
+                    </p>
+                    <div class="game-grid">
+                        <a href="quiz.html" class="game-card">
+                            <span class="material-symbols-outlined">quiz</span>
+                            <h3>Climate Knowledge Quiz</h3>
+                            <p>
+                                How much have you learned from the articles? Take this quiz to
+                                find out and test your understanding of climate change as a
+                                social crisis.
+                            </p>
+                        </a>
+                        <a href="#" class="game-card disabled">
+                            <span class="material-symbols-outlined">stadia_controller</span>
+                            <h3>Game 2</h3>
+                            <p>
+                                A new interactive experience is coming soon. Check back later
+                                to play!
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="game-src/game.js"></script>
+</body>
+
+</html>
