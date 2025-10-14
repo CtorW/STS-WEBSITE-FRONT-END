@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Justice Challenge - Science Nexus ⚛️</title>
+    <link rel="stylesheet" href="climate-games-files/style.css">
+    <link rel="shortcut icon" href="src/logos/science-logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <div class="navbar-overlay"></div>
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none">
+            <div class="navbar-header"><span>Science Nexus ⚛️</span></div>
+        </a>
+        <ul>
+            <li>
+                <a href="games.html" class="nav-link back-button">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                    <span>Back to Games</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+        <main class="main-content-wrapper">
+            <header class="main-header">
+                <button class="icon-btn menu-btn" aria-label="Open navigation menu"><span
+                        class="material-symbols-outlined">menu</span></button>
+                <div class="theme-switcher">
+                    <button class="icon-btn" id="light-theme-btn" aria-label="Switch to light theme"><span
+                            class="material-symbols-outlined">light_mode</span></button>
+                    <button class="icon-btn" id="dark-theme-btn" aria-label="Switch to dark theme"><span
+                            class="material-symbols-outlined">dark_mode</span></button>
+                </div>
+            </header>
+            <div class="content-card">
+                <div class="game-window">
+
+                    <div id="game-start-screen">
+                        <h1>Climate Justice Challenge</h1>
+                        <p>You are the leader of a vulnerable nation with a limited budget. Your goal is to navigate 5
+                            years of climate challenges, balancing your nation's budget, the happiness of your people,
+                            and your resilience to disasters. Make wise choices to lead your nation to a sustainable
+                            future. Good luck.</p>
+                        <button class="primary-btn" id="start-game-btn">Begin the Challenge</button>
+                    </div>
+
+                    <div id="game-main-screen">
+                        <div class="status-bar">
+                            <div class="status-item">Year <span id="year-stat">1/5</span></div>
+                            <div class="status-item">Budget <span id="budget-stat">$100M</span></div>
+                            <div class="status-item">Happiness <span id="happiness-stat">70%</span></div>
+                            <div class="status-item">Resilience <span id="resilience-stat">50%</span></div>
+                        </div>
+                        <p id="scenario-text">A severe drought is affecting your agricultural regions, threatening food
+                            security for thousands.</p>
+                        <div class="game-options" id="game-options"></div>
+                        <div id="decision-result"></div>
+                        <button class="primary-btn" id="next-turn-btn" style="display: none;">Continue</button>
+                    </div>
+
+                    <div id="game-end-screen">
+                        <h1 id="end-title">Challenge Complete!</h1>
+                        <p id="end-message">You have successfully navigated the challenges.</p>
+                        <button class="primary-btn" id="play-again-btn">Play Again</button>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="climate-games-files/main.js"></script>
+</body>
+
+</html>

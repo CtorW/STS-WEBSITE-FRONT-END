@@ -1,0 +1,382 @@
+:root {
+  --md-sys-color-primary-light: #6750a4;
+  --md-sys-color-on-primary-light: #ffffff;
+  --md-sys-color-primary-container-light: #eaddff;
+  --md-sys-color-on-primary-container-light: #21005d;
+  --md-sys-color-secondary-container-light: #e8def8;
+  --md-sys-color-on-secondary-container-light: #1d192b;
+  --md-sys-color-tertiary-light: #7d5260;
+  --md-sys-color-on-tertiary-light: #ffffff;
+  --md-sys-color-background-light: #fffbfe;
+  --md-sys-color-on-background-light: #1c1b1f;
+  --md-sys-color-surface-light: #fffbfe;
+  --md-sys-color-on-surface-light: #1c1b1f;
+  --md-sys-color-surface-variant-light: #e7e0ec;
+  --md-sys-color-on-surface-variant-light: #49454f;
+  --md-sys-color-outline-light: #79747e;
+  --md-sys-color-scrim-light: rgba(0, 0, 0, 0.5);
+  --md-sys-color-error-light: #b3261e;
+  --md-sys-color-error-container-light: #f9dedc;
+  --md-sys-color-on-error-container-light: #410e0b;
+
+  --md-sys-color-primary-dark: #d0bcff;
+  --md-sys-color-on-primary-dark: #381e72;
+  --md-sys-color-primary-container-dark: #4f378b;
+  --md-sys-color-on-primary-container-dark: #eaddff;
+  --md-sys-color-secondary-container-dark: #4a4458;
+  --md-sys-color-on-secondary-container-dark: #e8def8;
+  --md-sys-color-tertiary-dark: #efb8c8;
+  --md-sys-color-on-tertiary-dark: #492532;
+  --md-sys-color-background-dark: #1c1b1f;
+  --md-sys-color-on-background-dark: #e6e1e5;
+  --md-sys-color-surface-dark: #1c1b1f;
+  --md-sys-color-on-surface-dark: #e6e1e5;
+  --md-sys-color-surface-variant-dark: #49454f;
+  --md-sys-color-on-surface-variant-dark: #cac4d0;
+  --md-sys-color-outline-dark: #938f99;
+  --md-sys-color-scrim-dark: rgba(0, 0, 0, 0.6);
+  --md-sys-color-error-dark: #f2b8b5;
+  --md-sys-color-error-container-dark: #8c1d18;
+  --md-sys-color-on-error-container-dark: #f9dedc;
+
+  --md-sys-font-family: "googlesans", "Roboto", sans-serif;
+  --md-sys-motion-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --md-sys-motion-duration-short: 150ms;
+  --md-sys-motion-duration-medium: 300ms;
+}
+
+@font-face {
+  font-family: "googlesans";
+  src: url(fonts/googlesans.ttf);
+}
+
+body {
+  --md-sys-color-primary: var(--md-sys-color-primary-light);
+  --md-sys-color-primary-container: var(--md-sys-color-primary-container-light);
+  --md-sys-color-on-primary-container: var(
+    --md-sys-color-on-primary-container-light
+  );
+  --md-sys-color-secondary-container: var(
+    --md-sys-color-secondary-container-light
+  );
+  --md-sys-color-on-secondary-container: var(
+    --md-sys-color-on-secondary-container-light
+  );
+  --md-sys-color-tertiary: var(--md-sys-color-tertiary-light);
+  --md-sys-color-background: var(--md-sys-color-background-light);
+  --md-sys-color-on-background: var(--md-sys-color-on-background-light);
+  --md-sys-color-surface: var(--md-sys-color-surface-light);
+  --md-sys-color-on-surface: var(--md-sys-color-on-surface-light);
+  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-light);
+  --md-sys-color-on-surface-variant: var(
+    --md-sys-color-on-surface-variant-light
+  );
+  --md-sys-color-outline: var(--md-sys-color-outline-light);
+  --md-sys-color-scrim: var(--md-sys-color-scrim-light);
+  --md-sys-color-error: var(--md-sys-color-error-light);
+  --md-sys-color-error-container: var(--md-sys-color-error-container-light);
+  --md-sys-color-on-error-container: var(
+    --md-sys-color-on-error-container-light
+  );
+}
+
+body.dark-theme {
+  --md-sys-color-primary: var(--md-sys-color-primary-dark);
+  --md-sys-color-primary-container: var(--md-sys-color-primary-container-dark);
+  --md-sys-color-on-primary-container: var(
+    --md-sys-color-on-primary-container-dark
+  );
+  --md-sys-color-secondary-container: var(
+    --md-sys-color-secondary-container-dark
+  );
+  --md-sys-color-on-secondary-container: var(
+    --md-sys-color-on-secondary-container-dark
+  );
+  --md-sys-color-tertiary: var(--md-sys-color-tertiary-dark);
+  --md-sys-color-background: var(--md-sys-color-background-dark);
+  --md-sys-color-on-background: var(--md-sys-color-on-background-dark);
+  --md-sys-color-surface: var(--md-sys-color-surface-dark);
+  --md-sys-color-on-surface: var(--md-sys-color-on-surface-dark);
+  --md-sys-color-surface-variant: var(--md-sys-color-surface-variant-dark);
+  --md-sys-color-on-surface-variant: var(
+    --md-sys-color-on-surface-variant-dark
+  );
+  --md-sys-color-outline: var(--md-sys-color-outline-dark);
+  --md-sys-color-scrim: var(--md-sys-color-scrim-dark);
+  --md-sys-color-error: var(--md-sys-color-error-dark);
+  --md-sys-color-error-container: var(--md-sys-color-error-container-dark);
+  --md-sys-color-on-error-container: var(
+    --md-sys-color-on-error-container-dark
+  );
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: var(--md-sys-font-family);
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  transition: background-color var(--md-sys-motion-duration-medium);
+  display: flex;
+}
+.navbar {
+  width: 300px;
+  height: 100vh;
+  background-color: var(--md-sys-color-surface);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  flex-shrink: 0;
+  transition: transform 0.3s ease,
+    background-color var(--md-sys-motion-duration-medium);
+  z-index: 100;
+  overflow-y: auto;
+}
+.page-wrapper {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 300px;
+  height: 100%;
+  transition: margin-left 0.3s ease, transform 0.3s ease;
+}
+.main-content-wrapper {
+  flex-grow: 1;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navbar-header {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--md-sys-color-on-surface);
+  padding: 12px 8px 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--md-sys-color-on-surface-variant);
+  font-size: 1.1em;
+  padding: 16px 24px;
+  border-radius: 50px;
+  margin: 0 12px 8px 12px;
+  transition: all var(--md-sys-motion-duration-short)
+    var(--md-sys-motion-easing-standard);
+}
+.nav-link.back-button {
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+  font-weight: 700;
+}
+.nav-link:hover {
+  background-color: var(--md-sys-color-secondary-container);
+}
+.main-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+.content-card {
+  background-color: var(--md-sys-color-surface-variant);
+  padding: 32px;
+  border-radius: 28px;
+  flex-grow: 1;
+  transition: background-color var(--md-sys-motion-duration-medium);
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game-window {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--md-sys-color-surface);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+.game-window h1 {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+  color: var(--md-sys-color-primary);
+}
+.game-window p {
+  font-size: 1.1em;
+  margin-bottom: 24px;
+  color: var(--md-sys-color-on-surface-variant);
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.primary-btn {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 1.2em;
+  font-weight: 700;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  cursor: pointer;
+  text-decoration: none;
+}
+.status-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--md-sys-color-surface-variant);
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.status-item {
+  font-size: 1.1em;
+}
+.status-item span {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: var(--md-sys-color-primary);
+}
+#scenario-text {
+  font-size: 1.4em;
+  min-height: 100px;
+  margin-bottom: 24px;
+}
+.game-options {
+  display: grid;
+  gap: 12px;
+}
+.option-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.1em;
+  border-radius: 12px;
+  border: 2px solid var(--md-sys-color-outline);
+  background-color: transparent;
+  color: var(--md-sys-color-on-surface);
+  cursor: pointer;
+  text-align: left;
+}
+.option-btn:hover {
+  border-color: var(--md-sys-color-primary);
+  background-color: var(--md-sys-color-secondary-container);
+}
+#decision-result {
+  margin-top: 24px;
+  font-size: 1.1em;
+  font-style: italic;
+  color: var(--md-sys-color-on-surface-variant);
+}
+#next-turn-btn {
+  margin-top: 16px;
+}
+#game-main-screen,
+#game-end-screen {
+  display: none;
+}
+.icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--md-sys-color-on-surface-variant);
+}
+.theme-switcher {
+  display: flex;
+  border-radius: 50px;
+  border: 1px solid var(--md-sys-color-outline);
+  overflow: hidden;
+  background-color: var(--md-sys-color-surface-variant);
+}
+.theme-switcher .icon-btn {
+  width: 56px;
+  height: 40px;
+  border-radius: 0;
+  background-color: transparent;
+  color: var(--md-sys-color-on-surface-variant);
+}
+.theme-switcher .icon-btn:first-child {
+  border-right: 1px solid var(--md-sys-color-outline);
+}
+.theme-switcher .icon-btn.active {
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+.menu-btn,
+.navbar-overlay {
+  display: none;
+}
+body.navbar-open .navbar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--md-sys-color-scrim);
+  z-index: 99;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@media (max-width: 992px) {
+  .menu-btn {
+    display: flex;
+  }
+  .main-header {
+    justify-content: space-between;
+  }
+  .navbar {
+    transform: translateX(-100%);
+  }
+  body.navbar-open .navbar {
+    transform: translateX(0);
+  }
+  body.navbar-open .page-wrapper {
+    transform: translateX(280px);
+  }
+  .page-wrapper {
+    margin-left: 0;
+  }
+  .main-content-wrapper {
+    padding: 16px;
+  }
+  .content-card {
+    padding: 16px;
+  }
+  .game-window {
+    padding: 16px;
+  }
+  .game-window h1 {
+    font-size: 2em;
+  }
+  .status-bar {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .status-item {
+    flex-basis: 40%;
+  }
+}
